@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.form {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 250px;
+  float: left;
+  transform: translateY(-200px);
+  transition: 0.5s transform ease;
+}
+
+.active-form {
+  transform: translateY(0px);
+}
+
+.textarea {
+  width: 100%;
+  height: 135px;
+  resize: none;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border: none;
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: rgb(0, 0, 0);
+  background: #f7f6f7;
+  outline: none;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.cancel-btn {
+  background: #e61717;
+  margin-bottom: 10px;
+  width: 100%;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border: none;
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.add-btn {
+  background: linear-gradient(90deg, #f53838 0%, #ff85e4 179.25%);
+  width: 100%;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border: none;
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s background ease;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.add-btn:disabled {
+  opacity: 0.5;
+  background: #0fd451;
+}
+
+.active-add-btn {
+  opacity: 1;
+  background: #0fd451;
+}
+
+.row {
+  display: flex;
+  width: 900px;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.col-header {
+  width: 250px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.item {
+  margin-bottom: 10px;
+  width: 250px;
+  min-height: 70px;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  color: #828282;
+  text-align: center;
+  cursor: grab;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.item:hover .tooltip {
+  display: block;
+}
+
+.tooltip {
+  display: none;
+  background: #d4d4d4;
+  font-size: 12px;
+  border-radius: 20px;
+  margin-left: 150px;
+  padding: 8px;
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  height: 44px;
+}
+
+.placeholder {
+  width: 250px;
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.start {
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+}
+
+.progress {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+
+.done {
+  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.hold {
+  border: 2px solid #9bffab;
+}
+
+.hide {
+  display: none;
+}
+
+.holdstart {
+  border-top: 2px solid #9bffab;
+}
+
+.hovered {
+  border-top: 2px solid #00ff2a;
+}
